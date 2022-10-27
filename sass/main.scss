@@ -1,0 +1,42 @@
+// CUSTOM VARIABLES
+// we import them first, because Bootstrap set their own only by default, in case there are no values already set 
+$primary: #5265E1;
+$secondary: #FA5959;
+$font-family-sans-serif: 'Roboto Flex', sans-serif;
+
+// IMPORT THE FUNCTIONS AND VARIABLES
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// IMPORT ALL ORIGINAL BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+h1 {
+  font-weight: 700;
+}
+
+// BLUE IMAGES BEHIND PICTURES
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.blue-image {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  aspect-ratio: 2/1;
+  translate: -70% 45%;
+  padding-bottom: 2rem;
+}
+
+// BUTTONS MAIN SECTION
+.btn-header {
+  height: 3.5em;
+  font-weight: bold;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+} 
+
+
