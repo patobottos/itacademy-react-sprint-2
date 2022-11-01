@@ -12,9 +12,10 @@ $font-family-sans-serif: 'Roboto Flex', sans-serif;
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 
-h1 {
+h1, h2 {
   font-weight: 700;
 }
+
 
 // BLUE IMAGES BEHIND PICTURES
 .image-container {
@@ -27,9 +28,17 @@ h1 {
   z-index: -1;
   width: 90%;
   aspect-ratio: 2/1;
-  translate: -70% 45%;
   padding-bottom: 2rem;
 }
+
+.blue-image__right {
+  translate: -70% 45%;
+}
+
+.blue-image__left {
+  translate: -130% 45%;
+}
+
 
 // BUTTONS MAIN SECTION
 .btn-header {
@@ -37,6 +46,44 @@ h1 {
   font-weight: bold;
   font-size: 0.9em;
   letter-spacing: 0.05em;
-} 
+}
+
+// FEATURES-SECTION NAV-BAR 
+
+ul.nav-tabs {
+  border-bottom: 1px solid #cccccc;
+  align-items: center;
+}
+
+ul.nav-tabs li {
+  border-top: 1px solid #cccccc;
+}
+
+.features-nav .nav-item .nav-link {
+  letter-spacing: 0.05em;
+}
+
+.features-nav .nav-item .nav-link.active {
+  border-bottom: 5px solid #FA5959;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  align-items: center;
+  color: #363948;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  ul.nav-tabs {
+    border-bottom: 1px solid #cccccc;
+  }
+  
+  ul.nav-tabs li {
+    border-top: 0;
+  }
+}
+
+
+
 
 
