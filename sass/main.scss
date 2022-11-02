@@ -3,6 +3,9 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $font-family-sans-serif: 'Roboto Flex', sans-serif;
+$accordion-button-active-bg: #fff;
+$accordion-button-color: $primary;
+
 
 // IMPORT THE FUNCTIONS AND VARIABLES
 @import '../node_modules/bootstrap/scss/functions';
@@ -12,7 +15,9 @@ $font-family-sans-serif: 'Roboto Flex', sans-serif;
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 
-h1, h2 {
+h1,
+h2, 
+h3 {
   font-weight: 700;
 }
 
@@ -41,15 +46,15 @@ h1, h2 {
 
 
 // BUTTONS MAIN SECTION
-.btn-header {
+.btn-header, .btn-downloads {
   height: 3.5em;
   font-weight: bold;
   font-size: 0.9em;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 // FEATURES-SECTION NAV-BAR 
-
 ul.nav-tabs {
   border-bottom: 1px solid #cccccc;
   align-items: center;
@@ -77,11 +82,51 @@ ul.nav-tabs li {
   ul.nav-tabs {
     border-bottom: 1px solid #cccccc;
   }
-  
+
   ul.nav-tabs li {
     border-top: 0;
   }
 }
+
+// DOWNLOAD SECTION
+  //BROWSER CARDS
+.browser-cards .card-text {
+  border-bottom: 5px dotted grey;
+}
+
+.card-body.shadow {
+  border-radius: 10%;
+}
+
+  //CARD TRANSLATION Y-AXIS
+@media (min-width: 768px) {
+  .browser-cards .card-2 {
+    transform: translate(0, 2rem);
+  }
+
+  .browser-cards .card-3 {
+    transform: translate(0, 4rem);
+  }
+}
+
+// FAQs SECTION
+.accordion button {
+  font-weight: bold;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+  outline: 5px solid white;
+}
+
+.accordion .accordion-button-text {
+  color: black;
+}
+
+button.accordion-button:not(.collapsed)::after {
+  background-image: url(../assets/icon-arrow.svg); 
+}
+
+
 
 
 
