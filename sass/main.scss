@@ -21,6 +21,11 @@ h3 {
   font-weight: 700;
 }
 
+// NAV-BAR MENU TEXT
+.navbar .navbar-nav {
+  font-size: 0.9em;
+  letter-spacing: 0.09em;
+}
 
 // BLUE IMAGES BEHIND PICTURES
 .image-container {
@@ -125,6 +130,39 @@ ul.nav-tabs li {
 button.accordion-button:not(.collapsed)::after {
   background-image: url(../assets/icon-arrow.svg); 
 }
+
+// FOOTER
+.footer-navbar {
+  background-color: #242946;
+}
+
+.footer-navbar li a {
+  color: #fff;
+  align-items: flex-start;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
+}
+
+.footer-p {
+  font-size: 0.85em;
+  letter-spacing: 0.35em;
+}
+
+.form-field-email,
+.footer-button {
+  height: 2.5rem;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 
