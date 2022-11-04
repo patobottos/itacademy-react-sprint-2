@@ -128,7 +128,8 @@ ul.nav-tabs li {
 }
 
 button.accordion-button:not(.collapsed)::after {
-  background-image: url(../assets/icon-arrow.svg); 
+  background-image: url(../assets/icon-arrow.svg);
+  filter: invert(62%) sepia(79%) saturate(4605%) hue-rotate(326deg) brightness(99%) contrast(96%);
 }
 
 // FOOTER
@@ -155,12 +156,62 @@ button.accordion-button:not(.collapsed)::after {
   margin: 0 auto;
 }
 
+// ACTIVE STATE ON HOVER FOR BUTTONS, TABS & ICONS
+.navbar .nav-link:hover {
+  color: $secondary;
+}
 
+.navbar .btn-secondary:hover {
+  color: $secondary !important;
+  background-color: #fff;
+  border: 1px solid $secondary;
+  font-weight: 700;
+}
 
+.bookmark-section .btn-primary:hover {
+  color: $primary;
+  background-color: #fff;
+  border: 2px solid $primary;
+}
 
+.bookmark-section .btn-light:hover {
+  color: $gray-700;
+  background-color: #fff;
+  border: 2px solid $gray-700;
+}
 
+.features-nav button:hover {
+  border: 0 !important;
+  color: $secondary !important;
+  font-weight: 700;
+}
 
+.btn-downloads:hover {
+  color: $primary;
+  background-color: #fff;
+  border: 2px solid $primary;
+}
 
+.faqs .accordion-button-text:hover {
+  color: $secondary !important;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.footer-button:hover {
+  color: $secondary !important;
+  background-color: #fff;
+  border: 1px solid $secondary;
+  font-weight: 700;
+}
+
+.footer-navbar .nav-link:hover {
+  color: $secondary !important;
+}
+
+.social-networks-icons:hover {
+  filter: invert(62%) sepia(79%) saturate(4605%) hue-rotate(326deg) brightness(99%) contrast(96%); 
+}
 
 
 
