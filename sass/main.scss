@@ -105,14 +105,16 @@ ul.nav-tabs li {
 
   //CARD TRANSLATION Y-AXIS
 @media (min-width: 768px) {
-  .browser-cards .card-2 {
+
+  .browser-cards .row>:nth-child(2) {
     transform: translate(0, 2rem);
   }
 
-  .browser-cards .card-3 {
+  .browser-cards .row>:nth-child(3) {
     transform: translate(0, 4rem);
   }
 }
+
 
 // FAQs SECTION
 .accordion button {
