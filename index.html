@@ -73,7 +73,8 @@
                             </div>
 
                             <div class="col-12 text-center text-md-start text-muted">
-                                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites loaded instantly. Try it for free.</p>
+                                <p>A clean and simple interface to organize your favourite websites. Open a new browser
+                                    tab and see your sites loaded instantly. Try it for free.</p>
                             </div>
 
                             <div class="col-12 d-flex justify-content-center justify-content-md-start ">
@@ -102,35 +103,33 @@
                         </div>
 
                         <div class="col-12 ps-4">
-                            <div class="row d-md-flex my-2">
+                            <div class="row my-2">
                                 <!-- NAV-TABS MENU-->
-                                <ul class="nav nav-tabs features-nav" role="tablist">
+                                <ul class="nav nav-tabs features-nav" id="myTab" role="tablist">
                                     <li class="nav-item col-12 col-md-4 d-flex justify-content-center"
                                         role="presentation">
-                                        <button class="nav-link text-muted active" id="bookmarking-tab"
-                                            data-bs-toggle="tab" data-bs-target="#bookmarking" type="button" role="tab"
-                                            aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
+                                        <a class="nav-link text-muted active" id="bookmarking-tab" data-bs-toggle="tab"
+                                            href="#bookmarking" role="tab" aria-controls="bookmarking"
+                                            aria-selected="true">Simple Bookmarking</a>
                                     </li>
                                     <li class="nav-item col-12 col-md-4 d-flex justify-content-center"
                                         role="presentation">
-                                        <button class="nav-link text-muted" id="searching-tab" data-bs-toggle="tab"
-                                            data-bs-target="#searching" type="button" role="tab"
-                                            aria-controls="searching" aria-selected="false">Speedy Searching</button>
+                                        <a class="nav-link text-muted" id="searching-tab" data-bs-toggle="tab"
+                                            href="#searching" role="tab" aria-controls="searching"
+                                            aria-selected="false">Speedy Searching</a>
                                     </li>
                                     <li class="nav-item col-12 col-md-4 d-flex justify-content-center"
                                         role="presentation">
-                                        <button class="nav-link text-muted" id="sharing-tab" data-bs-toggle="tab"
-                                            data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing"
-                                            aria-selected="false">Easy Sharing</button>
+                                        <a class="nav-link text-muted" id="sharing-tab" data-bs-toggle="tab"
+                                            href="#sharing" role="tab" aria-controls="sharing"
+                                            aria-selected="false">Easy Sharing</a>
                                     </li>
                                 </ul>
-
                                 <!-- 3 TABS CONTENT -->
-                                <div class="container tab-content features-nav-tabs">
-
+                                <div class="tab-content features-nav-tabs" id="myTabContent">
                                     <!-- TAB #1 -->
-                                    <div class="row my-3 d-md-flex tab-pane fade show active" id="bookmarking"
-                                        role="tabpanel" aria-labelledby="bookmarking-tab">
+                                    <div class="row tab-pane fade show active" id="bookmarking" role="tabpanel"
+                                        aria-labelledby="bookmarking-tab">
                                         <div class="col-12 col-md-6 p-5 mb-5 image-container">
                                             <!-- PICTURE -->
                                             <img class="img-fluid px-3" src="./assets/illustration-features-tab-1.svg"
@@ -156,10 +155,11 @@
                                                     info</button>
                                             </div>
                                         </div>
+
                                     </div>
 
                                     <!-- TAB #2 -->
-                                    <div class="row my-3 d-md-flex tab-pane fade" id="searching" role="tabpanel"
+                                    <div class="row tab-pane fade" id="searching" role="tabpanel"
                                         aria-labelledby="searching-tab">
                                         <div class="col-12 col-md-6 p-5 mb-5 image-container">
                                             <!-- PICTURE -->
@@ -180,7 +180,7 @@
                                                     at all. No need to trawl through all your bookmarks.</p>
                                             </div>
 
-                                            <div class="col-12 d-flex justify-content-center justify-content-md-start ">
+                                            <div class="col-12 d-flex justify-content-center justify-content-md-start">
                                                 <button type="button"
                                                     class="btn btn-primary me-3 shadow btn-header d-none d-md-block">More
                                                     info</button>
@@ -189,7 +189,7 @@
                                     </div>
 
                                     <!-- TAB #3 -->
-                                    <div class="ow my-3 d-md-flex tab-pane fade" id="sharing" role="tabpanel"
+                                    <div class="tab-pane fade" id="sharing" role="tabpanel"
                                         aria-labelledby="sharing-tab">
                                         <div class="col-12 col-md-6 p-5 mb-5 image-container">
                                             <!-- PICTURE -->
@@ -248,7 +248,7 @@
                                                 alt="Chrome browser">
                                             <h2 class="card-title">Add to Chrome</h2>
                                             <p class="card-text pb-5 text-muted">Minimum version 62</p>
-                                            <a href="#" class="btn btn-primary btn-downloads pt-3">Add & Install
+                                            <a href="#" class="btn btn-primary btn-downloads">Add & Install
                                                 Extension</a>
                                         </div>
                                     </div>
@@ -257,12 +257,12 @@
                                 <!-- CARD #2 -->
                                 <div class="col-12 col-md-4 d-flex justify-content-center mb-5 card-2">
                                     <div class="card text-center border-0 rounded-4" style="width: 18rem;">
-                                        <div class="card-body shadow shadow-primary">
+                                        <div class="card-body shadow shadow-primary container">
                                             <img class="img-fluid px-4 py-5" src="./assets/logo-firefox.svg"
                                                 alt="Chrome browser">
                                             <h2 class="card-title">Add to Firefox</h2>
                                             <p class="card-text pb-5 text-muted">Minimum version 55</p>
-                                            <a href="#" class="btn btn-primary btn-downloads pt-3">Add & Install
+                                            <a href="#" class="btn btn-primary btn-downloads">Add & Install
                                                 Extension</a>
                                         </div>
                                     </div>
@@ -276,7 +276,7 @@
                                                 alt="Chrome browser">
                                             <h2 class="card-title">Add to Opera</h2>
                                             <p class="card-text pb-5 text-muted">Minimum version 46</p>
-                                            <a href="#" class="btn btn-primary btn-downloads pt-3">Add & Install
+                                            <a href="#" class="btn btn-primary btn-downloads">Add & Install
                                                 Extension</a>
                                         </div>
                                     </div>
@@ -314,7 +314,8 @@
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <div class="accordion-body text-muted">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
                                     Quae, maiores ea a ullam cum repellat architecto sapiente commodi perferendis
                                     corrupti consequuntur est dolore voluptates, nihil aliquam libero qui corporis
                                     laborum unde recusandae adipisci voluptatibus rem.
@@ -332,7 +333,8 @@
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <div class="accordion-body text-muted">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
                                     Tenetur rem autem accusamus qui quod nam nostrum! Eaque iste non laborum iure id
                                     mollitia incidunt neque, aspernatur harum temporibus impedit earum perspiciatis amet
                                     error accusantium eum!</div>
@@ -349,7 +351,8 @@
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                <div class="accordion-body text-muted">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
                                     Nulla quo, odio voluptatibus a fuga culpa repudiandae dolorem soluta! Deleniti quae
                                     odio corrupti expedita magni, dolorem accusamus totam laborum laudantium nulla.
                                 </div>
@@ -366,7 +369,8 @@
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <div class="accordion-body text-muted">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
                                     Tempora ipsam, perferendis maiores dolorum voluptatum numquam reiciendis repudiandae
                                     nesciunt cupiditate soluta neque a eos architecto repellat.</div>
                             </div>
@@ -388,16 +392,17 @@
                     <p class="footer-p text-uppercase my-4 mb-md-4 text-white">35,000+ already joined</p>
                     <h3 class="text-white mx-4 my-4">Stay up-to-date with what we're doing</h3>
                     <!-- ENTER EMAIL FIELD -->
-                    <form class="row needs-validation my-4 d-flex justify-content-center">
-                        <div class="col-12 col-md-4 d-flex justify-content-center mt-4 align-self-md-end">
+                    <form class="row needs-validation my-4 d-flex justify-content-center" novalidate>
+                        <div class="col-12 col-md-4 justify-content-center align-self-md-end">
                             <label for="subscriberEmail" class="form-label"></label>
-                            <input type="email" class="form-control form-field-email rounded" id="subscriberEmail" aria-describedby="emailHelp" placeholder=" Enter your email address" required>
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <input type="email" class="form-control form-field-email rounded col-4" id="subscriberEmail" aria-describedby="emailHelp" placeholder=" Enter your email address" required>
+
+                            <div class="invalid-feedback bg-secondary text-white font-italic col-4">Whoops, make shure it's an email!</div>
                         </div>
 
                         <div class="col-12 col-md-4 d-flex justify-content-center mt-4 align-self-md-start">
-                            <button type="submit" class="btn btn-secondary btn-header text-white footer-button">Contact Us</button>
+                            <button type="submit" class="btn btn-secondary btn-header text-white footer-button">Contact
+                                Us</button>
                         </div>
                     </form>
                 </div>
@@ -434,8 +439,12 @@
                             <!-- SOCIAL NETWORKS -->
                             <div class="col-12 col-md-4 p-3">
                                 <div class="social-networks">
-                                    <a class="nav-link d-inline-block px-3" href="#facebook"><img class="social-networks-icons" src="./assets/icon-facebook.svg" alt="facebook"></a>
-                                    <a class="nav-link d-inline-block px-3" href="#facebook"><img class="social-networks-icons" src="./assets/icon-twitter.svg" alt="twitter"></a>
+                                    <a class="nav-link d-inline-block px-3" href="#facebook"><img
+                                            class="social-networks-icons" src="./assets/icon-facebook.svg"
+                                            alt="facebook"></a>
+                                    <a class="nav-link d-inline-block px-3" href="#facebook"><img
+                                            class="social-networks-icons" src="./assets/icon-twitter.svg"
+                                            alt="twitter"></a>
                                 </div>
                             </div>
                         </div>
@@ -447,6 +456,30 @@
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- SCRIPT PER A LA VALIDACIÓ DEL FORMULARI DE CONTACTE -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
 </html>

@@ -49,7 +49,6 @@ h3 {
   translate: -130% 45%;
 }
 
-
 // BUTTONS MAIN SECTION
 .btn-header, .btn-downloads {
   height: 3.5em;
@@ -103,9 +102,12 @@ ul.nav-tabs li {
   border-radius: 10%;
 }
 
-  //CARD TRANSLATION Y-AXIS
-@media (min-width: 768px) {
+.card-1, .card-2, .card-3 {
+  border: 10px solid white;
+}
 
+  //CARD TRANSLATION Y-AXIS - N-CHILD EXERCISE
+@media (min-width: 768px) {
   .browser-cards .row>:nth-child(2) {
     transform: translate(0, 2rem);
   }
@@ -156,6 +158,17 @@ button.accordion-button:not(.collapsed)::after {
   height: 2.5rem;
   width: 15rem;
   margin: 0 auto;
+}
+
+.invalid-feedback {
+  position: relative;
+  top: -5px;
+  width: 15rem;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 2px;
+  font-style: italic; 
 }
 
 // ACTIVE STATE ON HOVER FOR BUTTONS, TABS & ICONS
@@ -214,9 +227,6 @@ button.accordion-button:not(.collapsed)::after {
 .social-networks-icons:hover {
   filter: invert(62%) sepia(79%) saturate(4605%) hue-rotate(326deg) brightness(99%) contrast(96%); 
 }
-
-
-
 
 
 
